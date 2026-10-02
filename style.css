@@ -62,14 +62,14 @@ header {
 }
 
 .nav-logo {
-    height: 38px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
 
 .nav-logo:hover {
-    transform: scale(1.03);
+    transform: scale(1.5);
 }
 
 .nav-links {
