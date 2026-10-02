@@ -1,130 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan Melson | MyProfile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
 
-      <!DOCTYPE html>
-      <html>
-        <head>
-          
-          
-          
-          
-          <link rel="stylesheet" type="text/css" href="style.css" />
-          
-          
-          
-        </head>
-        <body>
-          
+    <!-- Header / Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="https://www.edusteemsonline.com" class="profile-logo">MyProfile</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://blog.edusteemsonline.com">Blog</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle theme">☀️</button>
+                </li>
+            </ul>
+        </div>
+    </header>
 
+    <!-- Main Hero / Profile Section -->
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">UI Des</span>
+                <h1>Chan Melson</h1>
+                <p class="tagline">Passionate web developer who enjoys creating modern websites and learning new technologies</p>
+            </div>
+        </section>
 
-<nav>
-    <h2>MyProfile</h2>
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>I'm a frontend developer who loves creating responsive and interactive websites using HTML, CSS and JavaScript.</p>
+            </div>
+        </section>
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+            </div>
+        </section>
 
-    <button id="themeBtn">🌙</button>
-</nav>
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <div class="card contact-card">
+                <p>Get in touch or send a message.</p>
+                <a href="mailto:contact@edusteemsonline.com" class="read-more">Send Email &rarr;</a>
+            </div>
+        </section>
+    </main>
 
-<header>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Chan Melson. All rights reserved.</p>
+    </footer>
 
-<div class="profile-card">
-
-<img src="https://i.pinimg.com/originals/b6/5f/85/b65f85cc50a20590b8b136b255057e09.jpg" alt="Profile">
-
-<h1>Chan Melson</h1>
-
-<h3 id="typing"></h3>
-
-<p>
-Passionate web developer who enjoys creating modern websites and learning new technologies
-</p>
-
-<div class="socials">
-
-<a href="#"><i class="fab fa-github"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-</div>
-
-</div>
-
-</header>
-
-<section id="about">
-
-<h2>About Me</h2>
-
-<p>
-I'm a frontend developer who loves creating responsive and interactive websites using HTML, CSS and JavaScript.
-</p>
-
-</section>
-
-<section id="skills">
-
-<h2>Skills</h2>
-
-<div class="skill">
-
-<p>HTML</p>
-
-<div class="bar">
-<div class="progress html"></div>
-</div>
-
-</div>
-
-<div class="skill">
-
-<p>CSS</p>
-
-<div class="bar">
-<div class="progress css"></div>
-</div>
-
-</div>
-
-<div class="skill">
-
-<p>JavaScript</p>
-
-<div class="bar">
-<div class="progress js"></div>
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">Send</button>
-
-</form>
-
-</section>
-
-
-
-    
-    
-
-          
-          <script type="text/javascript" src="script.js"></script>
-          
-        </body>
-      </html>
-    
+    <script src="script.js"></script>
+</body>
+</html>
