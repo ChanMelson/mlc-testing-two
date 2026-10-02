@@ -1,7 +1,6 @@
 const themeToggleBtn = document.getElementById('themeToggleBtn');
 const body = document.body;
 
-// Check for saved user preference or default to 'dark'
 const savedTheme = localStorage.getItem('theme') || 'dark';
 body.setAttribute('data-theme', savedTheme);
 themeToggleBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
