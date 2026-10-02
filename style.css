@@ -8,8 +8,6 @@
     --muted-text: #64748b;
     --nav-bg: rgba(248, 250, 252, 0.85);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --logo-color: #9333ea;
-    --logo-hover: #a855f7;
 }
 
 [data-theme="dark"] {
@@ -22,8 +20,6 @@
     --muted-text: #94a3b8;
     --nav-bg: rgba(15, 23, 42, 0.85);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-    --logo-color: #a855f7;
-    --logo-hover: #c084fc;
 }
 
 * {
@@ -57,21 +53,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
 }
 
-.profile-logo {
-    font-weight: 700;
-    font-size: 1.35rem;
-    color: var(--logo-color);
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 2px;
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 
-.profile-logo:hover {
-    color: var(--logo-hover);
-    text-decoration-color: var(--logo-hover);
+.nav-logo {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.03);
 }
 
 .nav-links {
@@ -112,7 +110,20 @@ main {
 
 .hero-section {
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0 4rem 0;
+}
+
+.profile-pic-container {
+    margin-bottom: 1.5rem;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--shadow);
 }
 
 .badge {
